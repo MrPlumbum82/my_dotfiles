@@ -4,7 +4,7 @@
 
 # My VIM Setup
 
-This my personal vim setup, feel free to use it and/or modify it.
+This is my personal vim setup, feel free to use it and/or modify it.
 
 ### What does my setup contain?
 
