@@ -51,6 +51,14 @@ noremap k gk
 " always show status line at the bottom
 set laststatus=2
 
+" enable smarttab line for the vim-airline plugin
+let g:airline#extensions#tabline#enabled = 1
+
+set nowrap "do not wrap lines
+" set listchars=tab:&gt;-,trail:~,extends:&gt;,precedes:&lt; "show tabs, whitespace and line overflow/underflow
+" set wildmode=longest:full "when choosing, show longest match
+set wildmenu "and show the remaining options in a menu
+ 
 "automating compilation
 "autocmd Filetype java set makeprg=javac\ %
 "set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#

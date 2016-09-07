@@ -8,10 +8,12 @@ This is my personal vim setup, feel free to use it and/or modify it.
 
 ### What does my setup contain?
 
-* basic vimrc with some keybindings like 'jk' binded to <Esc>
+* basic vimrc with some keybindings like 'jk' binded to <Esc> (more detail in vimrc comments)
 * pathogen
 * nerdtree
 * ctrlp
+* vim-airline
+* vim-airline-themes
 
 ### Installation
 
