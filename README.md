@@ -1,8 +1,8 @@
-# My VIM Setup
-
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/11234396/18296957/ad2a37fa-74c6-11e6-9041-3711078c8645.png"/>
 </p>
+
+# My VIM Setup
 
 This my personal vim setup, feel free to use it and/or modify it.
 
