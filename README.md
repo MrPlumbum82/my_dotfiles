@@ -13,8 +13,6 @@ This my personal vim setup, feel free to use it and/or modify it.
 
 * Create a directory called .vim in your home folder and clone this repo.
 ```bash
-	mkdir ~/.vim
-	cd ~/.vim
 	git clone --recursive https://github.com/MrPlumbum82/my_vim_setup ~/.vim
 ```
 
