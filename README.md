@@ -15,7 +15,7 @@ This my personal vim setup, feel free to use it and/or modify it.
 ```bash
 	mkdir ~/.vim
 	cd ~/.vim
-	git clone --recursive https://github.com/MrPlumbum82/my_vim_setup .
+	git clone --recursive https://github.com/MrPlumbum82/my_vim_setup ~/.vim
 ```
 
 * Create a symbolic link to the vimrc file.

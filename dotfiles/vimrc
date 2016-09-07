@@ -48,6 +48,9 @@ vnoremap ; :
 noremap j gj
 noremap k gk
 
+" always show status line at the bottom
+set laststatus=2
+
 "automating compilation
 "autocmd Filetype java set makeprg=javac\ %
 "set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
