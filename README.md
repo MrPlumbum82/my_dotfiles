@@ -2,7 +2,7 @@
 
 This my personal vim setup, feel free to use it and/or modify it.
 
-# What does my setup contain?
+### What does my setup contain?
 
 * basic vimrc with some keybindings like 'jk' binded to <Esc>
 * pathogen
