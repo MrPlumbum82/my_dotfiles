@@ -28,3 +28,4 @@ This is my personal vim setup, feel free to use it and/or modify it.
 ```
 
 * Open VIM and enjoy!
+
