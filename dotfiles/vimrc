@@ -16,9 +16,9 @@ syntax on
 "settings button mapping
 inoremap jk <Esc>
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab " use spaces instead of tabs.
 set smarttab " let's tab key insert 'tab stops', and bksp deletes tabs.
 set shiftround " tab / shifting moves to closest tabstop.
@@ -54,7 +54,7 @@ set laststatus=2
 " enable smarttab line for the vim-airline plugin
 let g:airline#extensions#tabline#enabled = 1
 
-set nowrap "do not wrap lines
+" set nowrap "do not wrap lines
 " set listchars=tab:&gt;-,trail:~,extends:&gt;,precedes:&lt; "show tabs, whitespace and line overflow/underflow
 " set wildmode=longest:full "when choosing, show longest match
 set wildmenu "and show the remaining options in a menu
@@ -66,3 +66,6 @@ set wildmenu "and show the remaining options in a menu
 "map <F6> :!java -cp %:p:h %:t:r<Return>
 "map <F7> :cprevious<Return>
 "map <F8> :cnext<Return>
+
+nnoremap <F5> :bn<CR>
+nnoremap <F6> :bp<CR>
