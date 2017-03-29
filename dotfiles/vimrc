@@ -57,7 +57,7 @@ let g:airline#extensions#tabline#enabled = 1
 " set nowrap "do not wrap lines
 " set listchars=tab:&gt;-,trail:~,extends:&gt;,precedes:&lt; "show tabs, whitespace and line overflow/underflow
 " set wildmode=longest:full "when choosing, show longest match
-set wildmenu "and show the remaining options in a menu
+" set wildmenu "and show the remaining options in a menu
  
 "automating compilation
 "autocmd Filetype java set makeprg=javac\ %
@@ -69,3 +69,12 @@ set wildmenu "and show the remaining options in a menu
 
 nnoremap <F5> :bn<CR>
 nnoremap <F6> :bp<CR>
+nnoremap <F7> :bd<CR>
+
+" Tab completion setup
+" https://robots.thoughtbot.com/vim-you-complete-me
+imap <Tab> <C-P>
+set complete=.,b,u,]
+set wildmode=longest,list:longest
+set completeopt=menu,preview
+
