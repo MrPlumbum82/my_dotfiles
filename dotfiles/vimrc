@@ -73,7 +73,7 @@ nnoremap <F7> :bd<CR>
 
 " Tab completion setup
 " https://robots.thoughtbot.com/vim-you-complete-me
-imap <Tab> <C-P>
+"imap <Tab> <C-P>
 set complete=.,b,u,]
 set wildmode=longest,list:longest
 set completeopt=menu,preview
