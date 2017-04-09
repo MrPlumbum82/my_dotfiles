@@ -78,3 +78,10 @@ set complete=.,b,u,]
 set wildmode=longest,list:longest
 set completeopt=menu,preview
 
+" paste mode toggle
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
+" Tagbar toggle
+nmap <F8> :TagbarToggle<CR>
