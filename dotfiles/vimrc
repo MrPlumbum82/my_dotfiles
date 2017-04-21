@@ -2,6 +2,9 @@
 execute pathogen#infect()
 filetype plugin indent on
 
+"For CTRLP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 "setting the color scheme which is coming from the colors folder in .vim
 colorscheme monokai
 
