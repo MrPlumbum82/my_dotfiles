@@ -12,6 +12,11 @@ This is my personal vim setup, feel free to use it and/or modify it.
 * pathogen
 * nerdtree
 * ctrlp
+* delimiMate
+* tagbar
+* fugitive
+* gitgutter
+* vim-commentary
 * vim-airline
 * vim-airline-themes
 
