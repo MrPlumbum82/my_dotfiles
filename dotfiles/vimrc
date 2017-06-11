@@ -42,8 +42,8 @@ set gdefault " use the `g` flag by default.
 set virtualedit+=block
 
 " So we don't have to press shift when we want to get into command mode.
-nnoremap ; :
-vnoremap ; :
+"nnoremap ; :
+"vnoremap ; :
 
 " Visual line nav, not real line nav
 " If you wrap lines, vim by default won't let you move down one line to the
@@ -70,9 +70,18 @@ let g:airline#extensions#tabline#enabled = 1
 "map <F7> :cprevious<Return>
 "map <F8> :cnext<Return>
 
-nnoremap <F5> :bn<CR>
-nnoremap <F6> :bp<CR>
-nnoremap <F7> :bd<CR>
+let mapleader = "\<Space>"
+
+nnoremap <leader>p "0p
+nnoremap <leader>P "0P
+
+nnoremap <leader>n :bn<CR>
+nnoremap <leader>b :bp<CR>
+nnoremap <leader>d :bd<CR>
+
+"nnoremap <F5> :bn<CR>
+"nnoremap <F6> :bp<CR>
+"nnoremap <F7> :bd<CR>
 
 " Tab completion setup
 " https://robots.thoughtbot.com/vim-you-complete-me
