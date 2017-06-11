@@ -75,6 +75,8 @@ let mapleader = "\<Space>"
 nnoremap <leader>p "0p
 nnoremap <leader>P "0P
 
+nnoremap <leader><s-p> "+p
+
 nnoremap <leader>n :bn<CR>
 nnoremap <leader>b :bp<CR>
 nnoremap <leader>d :bd<CR>
