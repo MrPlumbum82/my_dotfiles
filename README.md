@@ -1,8 +1,32 @@
+# Contents
+  - alacrity configs
+  - zsh configs
+  - tmux configs
+  - neovim configs
+  - vim configs
+
+# Alacrity Config
+#### Config Location
+  - $HOME/.alacrity.yml (or) $HOME/.config/alacrity/alacrity.yml
+
+# Zsh Config
+#### Config Location
+  - $HOME/.zshrc
+
+#### Config Location
+# Tmux Config
+
+# NeoVim Config
+#### Config Location
+  - $HOME/.vimrc
+
+# VIM Config
+#### Config Location
+  - $HOME/.vimrc
+
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/11234396/18296957/ad2a37fa-74c6-11e6-9041-3711078c8645.png"/>
 </p>
-
-# My VIM Setup
 
 This is my personal vim setup, feel free to use it and/or modify it.
 
@@ -36,4 +60,3 @@ This is my personal vim setup, feel free to use it and/or modify it.
 	ln -s ~/.vim/dotfiles/vimrc ~/.vimrc
 ```
 
-* Open VIM and enjoy!
