@@ -18,6 +18,9 @@ let mapleader=","
 " Hide buffers instead of closing them
 set hidden 
 
+" Turn on syntax hightlighting
+syntax on
+
 " enable mouse click and select per buffer
 set mouse=a
 
@@ -126,6 +129,21 @@ catch
   echo 'Denite not installed. It should work after running :PlugInstall'
 endtry
 
+" === Coc.nvim === "
+" use <tab> for trigger completion and navigate to next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+"Close preview window when completion is done.
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
 " === NERDTree === "
 " Show hidden files/directories
 let g:NERDTreeShowHidden = 1
@@ -221,6 +239,11 @@ function! s:denite_my_settings() abort
   nnoremap <silent><buffer><expr> <C-h>
   \ denite#do_map('do_action', 'split')
 endfunction
+
+" === coc.nvim === "
+nmap <silent> <leader>dd <Plug>(coc-definition)
+nmap <silent> <leader>dr <Plug>(coc-references)
+nmap <silent> <leader>dj <Plug>(coc-implementation)
 
 " === Nerdtree shorcuts === "
 "  <leader>n - Toggle NERDTree on/off
