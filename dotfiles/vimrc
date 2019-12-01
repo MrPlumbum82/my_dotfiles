@@ -1,101 +1,32 @@
-"to use pathogen as my plugin manager
-execute pathogen#infect()
-filetype plugin indent on
+"__/\\\________/\\\__/\\\\\\\\\\\__/\\\\____________/\\\\____/\\\\\\\\\____________/\\\\\\\\\_        
+" _\/\\\_______\/\\\_\/////\\\///__\/\\\\\\________/\\\\\\__/\\\///////\\\_______/\\\////////__       
+"  _\//\\\______/\\\______\/\\\_____\/\\\//\\\____/\\\//\\\_\/\\\_____\/\\\_____/\\\/___________      
+"   __\//\\\____/\\\_______\/\\\_____\/\\\\///\\\/\\\/_\/\\\_\/\\\\\\\\\\\/_____/\\\_____________     
+"    ___\//\\\__/\\\________\/\\\_____\/\\\__\///\\\/___\/\\\_\/\\\//////\\\____\/\\\_____________    
+"     ____\//\\\/\\\_________\/\\\_____\/\\\____\///_____\/\\\_\/\\\____\//\\\___\//\\\____________   
+"      _____\//\\\\\__________\/\\\_____\/\\\_____________\/\\\_\/\\\_____\//\\\___\///\\\__________  
+"       ______\//\\\________/\\\\\\\\\\\_\/\\\_____________\/\\\_\/\\\______\//\\\____\////\\\\\\\\\_ 
+"        _______\///________\///////////__\///______________\///__\///________\///________\/////////__
 
-"For CTRLP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+inoremap jk <Esc> " remapping the Esc Key to jk
 
-"setting the color scheme which is coming from the colors folder in .vim
-colorscheme monokai
+syntax enable " enable syntax processing
 
-"enable mouse pointer
-:set mouse=a
-"enable line numbers
-:set number
-"enable buffer to switch if file not saved
-:set hidden
-"enable syntax coloring
-syntax on 
-"settings button mapping
-inoremap jk <Esc>
+set tabstop=2 " number of visual spaces per TAB character
+set softtabstop=2 " number of spaces in a tab when inserted in edit mode
+set expandtab " tabs are now spaces
 
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab " use spaces instead of tabs.
-set smarttab " let's tab key insert 'tab stops', and bksp deletes tabs.
-set shiftround " tab / shifting moves to closest tabstop.
-set autoindent " Match indents on new lines.
-set smartindent " Intellegently dedent / indent new lines based on rules.
+set number " show line numbers
 
-set noswapfile " They're just annoying. Who likes them?
+set cursorline " highlight current line
 
-" Make search more sane
-set ignorecase " case insensitive search
-set smartcase " If there are uppercase letters, become case-sensitive.
-set incsearch " live incremental searching
-set showmatch " live match highlighting
+set lazyredraw " redraw only when need to
+
+set showmatch " hightlight matching [{()}]
+
+set incsearch " search as characters are entered
 set hlsearch " highlight matches
-set gdefault " use the `g` flag by default.
+nnoremap <leader><space> :nohlsearch<CR> " turn off search highlight
 
-" allow the cursor to go anywhere in visual block mode.
-set virtualedit+=block
+let mapleader=","
 
-" So we don't have to press shift when we want to get into command mode.
-"nnoremap ; :
-"vnoremap ; :
-
-" Visual line nav, not real line nav
-" If you wrap lines, vim by default won't let you move down one line to the
-" wrapped portion. This fixes that.
-noremap j gj
-noremap k gk
-
-" always show status line at the bottom
-set laststatus=2
-
-" enable smarttab line for the vim-airline plugin
-let g:airline#extensions#tabline#enabled = 1
-
-" set nowrap "do not wrap lines
-" set listchars=tab:&gt;-,trail:~,extends:&gt;,precedes:&lt; "show tabs, whitespace and line overflow/underflow
-" set wildmode=longest:full "when choosing, show longest match
-" set wildmenu "and show the remaining options in a menu
- 
-"automating compilation
-"autocmd Filetype java set makeprg=javac\ %
-"set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
-"map <F5> :make<Return>:copen<Return>
-"map <F6> :!java -cp %:p:h %:t:r<Return>
-"map <F7> :cprevious<Return>
-"map <F8> :cnext<Return>
-
-let mapleader = "\<Space>"
-
-nnoremap <leader>p "0p
-nnoremap <leader>P "0P
-
-nnoremap <leader><s-p> "+p
-
-nnoremap <leader>n :bn<CR>
-nnoremap <leader>b :bp<CR>
-nnoremap <leader>d :bd<CR>
-
-"nnoremap <F5> :bn<CR>
-"nnoremap <F6> :bp<CR>
-"nnoremap <F7> :bd<CR>
-
-" Tab completion setup
-" https://robots.thoughtbot.com/vim-you-complete-me
-"imap <Tab> <C-P>
-set complete=.,b,u,]
-set wildmode=longest,list:longest
-set completeopt=menu,preview
-
-" paste mode toggle
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-set showmode
-
-" Tagbar toggle
-nmap <F8> :TagbarToggle<CR>
