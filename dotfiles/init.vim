@@ -52,9 +52,18 @@ set expandtab
 
 call plug#begin('~/.config/nvim/plugged')
 
+" These Plugins are working great!
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins'}
 Plug 'scrooloose/nerdtree'
+
+" These Plugins I want to get working but am having issues
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'mhinz/vim-signify'
+
+" Should I install these plugins?
 " Easy Motion?
 " Neo Snippets?
 
@@ -158,6 +167,47 @@ let g:NERDTreeMinimalUI = 1
 " Hide certain files and directories from NERDTree
 let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir]]', '\.sass-cache$']
 
+" Wrap in try/catch to avoid errors on initial install before plugin is available
+try
+
+" === Vim airline ==== "
+" Enable extensions
+let g:airline_extensions = ['branch', 'hunks', 'coc']
+
+" Vim airline theme
+let g:airline_theme='dark'
+
+" Add the tabline to the top
+let g:airline#extensions#tabline#enabled = 1
+
+" File path string formatting in the tabline (which isn't showing up grrrrrr)
+let g:airline#extensions#tabline#formatter = 'default'
+
+" Custom setup that removes filetype/whitespace from default vim airline bar
+" let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
+
+" Hide the Nerdtree status line to avoid clutter
+" let g:NERDTreeStatusline = ''
+
+" Enable powerline fonts
+let g:airline_powerline_fonts = 1
+
+" Enable caching of syntax highlighting groups
+" let g:airline_highlighting_cache = 1
+
+" Don't show git changes to current file in airline
+let g:airline#extensions#hunks#enabled=0
+
+catch
+  echo 'Airline not installed. It should work after running :PlugInstall'
+endtry
+
+" ============================================================================ "
+" ===                                  UI                                  === "
+" ============================================================================ "
+
+" ?
+
 " ============================================================================ "
 " ===                             KEY MAPPINGS                             === "
 " ============================================================================ "
@@ -226,7 +276,7 @@ function! s:denite_my_settings() abort
   \ denite#do_map('quit')
   nnoremap <silent><buffer><expr> d
   \ denite#do_map('do_action', 'delete')
-  nnoremap <silent><buffer><expr> p
+  noremap <silent><buffer><expr> p
   \ denite#do_map('do_action', 'preview')
   nnoremap <silent><buffer><expr> i
   \ denite#do_map('open_filter_buffer')
