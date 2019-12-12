@@ -161,8 +161,8 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 
 " Custom icons for expandable/expanded directories
-" let g:NERDTreeDirArrowExpandable = '⬏'
-" let g:NERDTreeDirArrowCollapsible = '⬎'
+let g:NERDTreeDirArrowExpandable = '⬏'
+let g:NERDTreeDirArrowCollapsible = '⬎'
 
 " Hide certain files and directories from NERDTree
 let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir]]', '\.sass-cache$']
@@ -184,16 +184,16 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 
 " Custom setup that removes filetype/whitespace from default vim airline bar
-" let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
+let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
 
 " Hide the Nerdtree status line to avoid clutter
-" let g:NERDTreeStatusline = ''
+let g:NERDTreeStatusline = ''
 
 " Enable powerline fonts
 let g:airline_powerline_fonts = 1
 
 " Enable caching of syntax highlighting groups
-" let g:airline_highlighting_cache = 1
+let g:airline_highlighting_cache = 1
 
 " Don't show git changes to current file in airline
 let g:airline#extensions#hunks#enabled=0
