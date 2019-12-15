@@ -55,7 +55,7 @@ Most of this is thanks to `jarvis` -> https://github.com/ctaylo21/jarvis
 ### TODO
   - git signify color change, red/green
   - coc linting color changes
-  - buffer switch hotkeys <Tab><ShiftTab>
+  - get used to your current setup and tweak it to your liking
 
   - document everything
     - things to install
