@@ -12,6 +12,7 @@
 " ===                           EDITING OPTIONS                            === "
 " ============================================================================ "
 
+
 " Remapping leader key to ,
 let mapleader=","
 
@@ -55,13 +56,27 @@ call plug#begin('~/.config/nvim/plugged')
 " These Plugins are working great!
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins'}
 Plug 'scrooloose/nerdtree'
-
-" These Plugins I want to get working but am having issues
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'mhinz/vim-signify'
+
+" === Javascript Plugins === "
+" Typescript syntax highlighting
+Plug 'HerringtonDarkholme/yats.vim'
+
+" ReactJS JSX syntax highlighting
+Plug 'mxw/vim-jsx'
+
+" Syntax highlighting for javascript libraries
+Plug 'othree/javascript-libraries-syntax.vim'
+
+" Improved syntax highlighting and indentation
+Plug 'othree/yajs.vim'
+
+" Icons
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Should I install these plugins?
 " Easy Motion?
@@ -171,14 +186,14 @@ let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir
 try
 
 " === Vim airline ==== "
+" Add the tabline to the top
+let g:airline#extensions#tabline#enabled = 1
+
 " Enable extensions
-let g:airline_extensions = ['branch', 'hunks', 'coc']
+let g:airline_extensions = ['branch', 'tabline', 'hunks', 'coc']
 
 " Vim airline theme
 let g:airline_theme='dark'
-
-" Add the tabline to the top
-let g:airline#extensions#tabline#enabled = 1
 
 " File path string formatting in the tabline (which isn't showing up grrrrrr)
 let g:airline#extensions#tabline#formatter = 'default'
@@ -216,11 +231,15 @@ endtry
 " remapping the Esc Key to jk
 inoremap jk <Esc> 
 
-" Quick window switching
+" Quick pan switching
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
+
+" Quick buffer switching
+nnoremap <tab> :bnext<cr>
+nnoremap <space><tab> :bprevious<cr>
 
 " === Denite shorcuts === "
 "   ;         - Browser currently open buffers

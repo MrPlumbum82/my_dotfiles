@@ -5,11 +5,11 @@ Most of this is thanks to `jarvis` -> https://github.com/ctaylo21/jarvis
   - zsh configs
   - tmux configs
   - neovim configs
-  - vim configs
+  - vim8 configs
 
 # Tools
-  - Terminal of choice (alacrity?)
-  - zsh
+  - terminal -> alacrity
+  - shell -> zsh
   - tmux
   - neovim (pref) or vim
   - ripgrep
@@ -19,42 +19,50 @@ Most of this is thanks to `jarvis` -> https://github.com/ctaylo21/jarvis
   sudo ln -s ~/<repo-directory> ~/<dotfile-location-and-name>
 ```
 
-# Alacrity Config
+# Configs
+## Alacrity Config
 #### Config Location
   - $HOME/.alacrity.yml (or) $HOME/.config/alacrity/alacrity.yml
 
-# Zsh Config
+## Zsh Config
 #### Config Location
   - $HOME/.zshrc
 
-# Tmux Config
+## Tmux Config
 #### Config Location
   - $HOM/.tmux.conf
 
-# NeoVim Config
+## NeoVim Config
 #### Config Location
   - $HOME/.config/nvim/init.vim
 
-# VIM Config
-#### Config Location
-  - $HOME/.vimrc
+#### What does my setup contain?
 
-### What does my setup contain?
-
-  - #### Plugins (Package Manager -> Vim Plug)
-
+##### Plugins (Package Manager -> Vim Plug)
 * nerdtree [(repo)](https://github.com/scrooloose/nerdtree)
 * denite
 * coc.vim
 
+#### Hotkeys
+
+
+
+
+## Vim8 Config
+#### Config Location
+  - $HOME/.vimrc
+
 ### TODO
-  - I don't understand some of the UI Sidebar issues with different file types, related to git signify maybe?... guess only shows when there is a change in the file meh...
-  - Update the colors to what you like, espessicaly for git signify (hunks) (green and red... or something)
-  - I can't get the tabline to work!!! what the hell man!
-  - Get linting to work for TS, TSX, JSX, JS, etc... COC baby!
-  - keep updating your config and organize your dotfiles better... also make notes of how to redo this config again on a new system...
-    - install powerline fonts...
-    - need some python packages... ripgrep... others...
-  - Write a complete list of all your keybindings...
-  - Also make a list of vim (nvim) default bindings you are learning or getting used to... like 'i' and 'a'... just make a list of everything
+  - git signify color change, red/green
+  - coc linting color changes
+  - buffer switch hotkeys <Tab><ShiftTab>
+
+  - document everything
+    - things to install
+      - powerline fonts
+      - python packages, ripgrep, others...
+      - test your install notes by installing everything again on like windows WSL or a new system...
+    - notes on Hotkeys
+      - default nvim/nvim bindigs your learning - 'i' 'a'
+      - custom hotkeys, related to plugins
 
