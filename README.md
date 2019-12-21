@@ -56,6 +56,8 @@ Most of this is thanks to `jarvis` -> https://github.com/ctaylo21/jarvis
   - git signify color change, red/green
   - coc linting color changes
   - get used to your current setup and tweak it to your liking
+    - find a commenting plugin
+    - learn to use coc and see the errors messages
 
   - document everything
     - things to install
@@ -65,4 +67,5 @@ Most of this is thanks to `jarvis` -> https://github.com/ctaylo21/jarvis
     - notes on Hotkeys
       - default nvim/nvim bindigs your learning - 'i' 'a'
       - custom hotkeys, related to plugins
+      - change the ; hotkey, I need it for next finding reference when using f
 
