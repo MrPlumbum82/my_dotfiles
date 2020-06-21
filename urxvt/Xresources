@@ -1,0 +1,33 @@
+*.font: xft:Overpass Mono:size=10
+
+Xft.dpi:                        96
+Xft.antialias:                  1
+Xft.autohint:                   1
+Xft.hinting:                    1
+Xft.hintstyle:                  hintslight
+Xft.lcdfilter:                  lcdlight
+Xft.rgba:                       rgb
+
+URxvt*termName:                 rxvt-256color
+URxvt.depth:                    32
+URxvt*lineSpace:                1
+URxvt.letterSpace:              -1
+URxvt.iso14755:                 false
+URxvt.iso14755_52:              false
+URxvt*geometry:                 65x17
+URxvt.scrollBar:                false
+URxvt*loginShell:               true
+URxvt.internalBorder:           25
+URxvt.perl-ext:	 		default,matcher
+URxvt.url-launcher:             firefox
+URxvt.matcher.button: 		1
+
+!! Copy/Paste and Other Extensions
+!! https://addy-dclxvi.github.io/post/configuring-urxvt/
+URxvt.perl-ext-common:          default,clipboard,url-select,keyboard-select
+URxvt.copyCommand:        	xclip -i -selection clipboard
+URxvt.pasteCommand:       	xclip -o -selection clipboard
+URxvt.keysym.M-c:		perl:clipboard:copy
+URxvt.keysym.M-v:		perl:clipboard:paste
+URxvt.keysym.M-C-v:		perl:clipboard:paste_escaped
+

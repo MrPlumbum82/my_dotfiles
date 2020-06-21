@@ -8,25 +8,23 @@
 "       ______\//\\\________/\\\\\\\\\\\_\/\\\_____________\/\\\_\/\\\______\//\\\____\////\\\\\\\\\_ 
 "        _______\///________\///////////__\///______________\///__\///________\///________\/////////__
 
+let mapleader=","
+
 inoremap jk <Esc> " remapping the Esc Key to jk
-
 syntax enable " enable syntax processing
-
 set tabstop=2 " number of visual spaces per TAB character
 set softtabstop=2 " number of spaces in a tab when inserted in edit mode
 set expandtab " tabs are now spaces
-
 set number " show line numbers
-
 set cursorline " highlight current line
-
-set lazyredraw " redraw only when need to
-
 set showmatch " hightlight matching [{()}]
 
+" I donno if i need this
+" set lazyredraw " redraw only when need to
+
+" Optional
 set incsearch " search as characters are entered
 set hlsearch " highlight matches
 nnoremap <leader><space> :nohlsearch<CR> " turn off search highlight
 
-let mapleader=","
 
