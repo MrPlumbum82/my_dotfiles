@@ -67,5 +67,15 @@ Most of this is thanks to `jarvis` -> https://github.com/ctaylo21/jarvis
     - notes on Hotkeys
       - default nvim/nvim bindigs your learning - 'i' 'a'
       - custom hotkeys, related to plugins
-      - change the ; hotkey, I need it for next finding reference when using f
+      - change the ; hotkey, I need it for next finding reference when using 
+
+  - document the following 
+    - arch install
+    - bspwm -> window manager
+    - sxhkd -> hotkey manager
+    - rofi -> application launcher
+    - kitty -> terminal
+    - polybar -> control bar
+    - ly -> login manager [this](https://github.com/nullgemm/ly)
+    - plymouth -> boot animation [this](https://github.com/adi1090x/plymouth-themes)
 
